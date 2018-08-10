@@ -4,6 +4,12 @@ class SchoolClassesController < ApplicationController
   end 
 
   def create 
+    @school_class = SchoolClass.new
+    @school_class.title = params[:title]
+    @school_class.room_number = params[:room_number]
+    @school_class.save 
+
+    redirect_to post_path(@post)
   end 
 
   def show 
