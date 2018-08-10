@@ -1,5 +1,6 @@
 class SchoolClassesController < ApplicationController
   def new 
+    @school_class = SchoolClass.new
   end 
 
   def create 
@@ -10,6 +11,7 @@ class SchoolClassesController < ApplicationController
   end 
 
   def edit
+    
   end 
 
   def update 
