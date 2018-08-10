@@ -9,7 +9,7 @@ class SchoolClassesController < ApplicationController
     @school_class.room_number = params[:room_number]
     @school_class.save 
 
-    redirect_to post_path(@post)
+    redirect_to school_class_path(@school_class)
   end 
 
   def show 
@@ -17,7 +17,7 @@ class SchoolClassesController < ApplicationController
   end 
 
   def edit
-    
+    @
   end 
 
   def update 
